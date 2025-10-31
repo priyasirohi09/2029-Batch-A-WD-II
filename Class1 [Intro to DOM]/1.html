@@ -7,11 +7,27 @@
 </head>
 <body>
   <button id="btn1">Say Hello</button>
+  <!-- <div id="box1">Box1</div> -->
   <!-- on clicking the button append hello to the page -->
   
   <script>
     let btn = document.getElementById('btn1')
     console.log(btn)
+
+
+    btn.addEventListener('click', function(){
+      console.log('Button Clicked')
+    })
+    // print div in the browser console
+
+    // let div = document.getElementById('box1')
+    // console.log(div)
+
+    // use query selector 
+    // let div = document.querySelector('#box1')
+    // console.log(div)
+
+
   </script>
 
   
