@@ -12,12 +12,20 @@
   
   <script>
     let btn = document.getElementById('btn1')
-    console.log(btn)
-
+    console.log(btn);
 
     btn.addEventListener('click', function(){
-      console.log('Button Clicked')
-    })
+      console.log('Hello')
+      let newele = document.createElement('div')
+      newele.innerText = 'Hello'
+      console.log(newele)
+
+      let body = document.querySelector('body')
+      body.appendChild(newele)
+
+    });
+
+
     // print div in the browser console
 
     // let div = document.getElementById('box1')
