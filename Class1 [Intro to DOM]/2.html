@@ -10,7 +10,15 @@
 <body>
   <!-- Q. Fix the mathmatical problem usng JS  -->
   <p>2 + 2 = 22</p>
+  <button id="Fix">Click here to fix</button>
 
+  <script>
+    let btn = document.getElementById('Fix')
+    btn.addEventListener('click', function(){
+      let p = document.querySelector('p')
+      p.innerText = '2 + 2 = 4'
+    })
+  </script>
 
 </body>
 
