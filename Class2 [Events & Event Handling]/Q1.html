@@ -21,6 +21,9 @@
       width: 10rem;
       margin: 2rem;
     }
+    .red{
+      background-color: red;
+    }
   </style>
 </head>
 
@@ -42,7 +45,9 @@
     console.log(allCards)
     for(let i = 0; i < allCards.length; i++){
       allCards[i].addEventListener('dblclick', function(){
-        allCards[i].style.backgroundColor = 'purple';
+        // allCards[i].style.backgroundColor = 'purple';
+
+        // add the red class to the clasList of that element
       })
     }
   </script>
