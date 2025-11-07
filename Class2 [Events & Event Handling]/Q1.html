@@ -35,6 +35,17 @@
   <div class="card"></div>
   <div class="card"></div>
   <div class="card"></div>
+
+
+  <script>
+    let allCards = document.querySelectorAll('.card');
+    console.log(allCards)
+    for(let i = 0; i < allCards.length; i++){
+      allCards[i].addEventListener('dblclick', function(){
+        allCards[i].style.backgroundColor = 'purple';
+      })
+    }
+  </script>
   
 </body>
 
