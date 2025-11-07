@@ -42,13 +42,10 @@
 
   <script>
     let allCards = document.querySelectorAll('.card');
-    console.log(allCards)
+    // console.log(allCards)
     for(let i = 0; i < allCards.length; i++){
-      allCards[i].addEventListener('dblclick', function(){
-        // allCards[i].style.backgroundColor = 'purple';
-
-        // add the red class to the clasList of that element
-        allCards[i].classList.add('red')
+      allCards[i].addEventListener('dblclick', function(event){
+        console.log(event)
       })
     }
   </script>
