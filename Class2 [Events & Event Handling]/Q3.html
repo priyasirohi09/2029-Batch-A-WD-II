@@ -112,10 +112,25 @@
     <script>
       // Q Make the filter work
       let dropdown = document.querySelector('select')
-      // console.log(dropdown)
+      let movies = document.querySelectorAll('.movies');
+      
       dropdown.addEventListener('change', function(){
-        console.log(dropdown)
-        console.log(dropdown.value)
+        // console.log(dropdown.value)
+        let category = dropdown.value
+
+        for(let i = 0; i < movies.length; i++){
+          let priceTag = movies[i].querySelector('.price')
+          let currCategory = priceTag.getAttribute('data-category')
+          // console.log(currCategory)
+
+          if(category == 'none' || category == currCategory){
+            movies[i].style.display = 'block'
+          }else{
+            movies[i].style.display = 'none'
+          }
+        }
+
+        
       })
     </script>
   </body>
