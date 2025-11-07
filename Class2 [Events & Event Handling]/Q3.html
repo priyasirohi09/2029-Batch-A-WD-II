@@ -111,7 +111,12 @@
     </div>
     <script>
       // Q Make the filter work
-
+      let dropdown = document.querySelector('select')
+      // console.log(dropdown)
+      dropdown.addEventListener('change', function(){
+        console.log(dropdown)
+        console.log(dropdown.value)
+      })
     </script>
   </body>
 </html>
